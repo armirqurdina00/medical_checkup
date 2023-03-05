@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import sqlite3
 
-st.set_page_config(page_title="Doctor checkup", layout="wide")
+st.set_page_config(page_title="Medical checkup", layout="wide")
 
 try:
     conn = sqlite3.connect('patients.db')
@@ -43,7 +43,7 @@ def get_data(file_name):
     return data
 
 
-st.header("Doctor checkup")
+st.header("Medical checkup")
 st.markdown("***")
 
 col1, col2, col3, col4 = st.columns(4)
